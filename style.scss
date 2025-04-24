@@ -1,0 +1,24 @@
+body{
+    background-color: #020c1b;
+
+    header{
+        position: fixed;
+        top: 0;
+        box-sizing: border-box;
+        display: flex;
+
+        .guide{
+            dis
+        }
+        .socials{
+            .linkedin::before{
+                content: url("/assets/img/linkedin.png");
+            }
+
+            .github::before{
+                content: url("/assets/img/github.png");
+            }
+        }
+    }
+}
+
