@@ -1,14 +1,15 @@
 :root {
   --the-green: #64ffda;
+  --font-p: "Cal Sans", sans-serif;
 }
 
 body {
   background-color: #020c1b;
-  display: grid;
-  grid-template-columns: 3rem auto 3rem;
-  grid-template-rows: min-content auto;
   width: 100vw;
   height: 100vh;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-p);
+  overflow-x: hidden;
 }
 body header {
   box-sizing: border-box;
@@ -19,6 +20,8 @@ body header {
   padding: 1rem;
   grid-column: 1/span 3;
   align-items: center;
+  position: fixed;
+  background-color: #020c1b;
 }
 body header .logo img {
   margin-top: 0.5rem;
@@ -31,6 +34,7 @@ body header .guide {
   font-weight: 400;
   font-size: 1.5rem;
   align-items: center;
+  padding: 1rem;
 }
 body header .guide a {
   text-decoration: none;
@@ -54,9 +58,11 @@ body .socials {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-self: flex-end;
-  justify-self: center;
   margin-bottom: 3rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 1rem;
 }
 body .socials li::before {
   background-size: contain;
@@ -75,16 +81,54 @@ body .socials .github::before {
 }
 body #email {
   text-decoration: none;
-  writing-mode: vertical-rl; /* ou vertical-lr */
+  writing-mode: vertical-rl;
   text-orientation: upright;
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: end;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 1rem;
 }
 body #email p {
   color: var(--the-green);
   height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 2rem;
+}
+body #content {
+  width: 1270px;
+  overflow-y: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+body #content .presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  padding-bottom: 100px;
+}
+body #content .presentation p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 40%;
+}
+body #content .presentation p:first-of-type {
+  color: var(--the-green);
+  font-weight: 700;
+  font-size: 1rem;
+}
+body #content .presentation h1 {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+}
+body #content .about {
+  padding: 100px 0 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
 }/*# sourceMappingURL=style.css.map */
