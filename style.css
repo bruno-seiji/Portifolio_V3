@@ -1,15 +1,71 @@
 body {
   background-color: #020c1b;
+  display: grid;
+  grid-template-columns: 3rem auto;
+  grid-template-rows: min-content auto;
+  width: 100vw;
+  height: 100vh;
 }
 body header {
-  position: fixed;
-  top: 0;
   box-sizing: border-box;
   display: flex;
+  height: 6.25rem;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 1rem;
+  grid-column: 1/span 2;
+  align-items: center;
 }
-body header .socials .linkedin::before {
-  content: url("/assets/img/linkedin.png");
+body header .logo img {
+  margin-top: 0.5rem;
+  width: 4rem;
+  box-sizing: border-box;
 }
-body header .socials .github::before {
-  content: url("/assets/img/github.png");
+body header .guide {
+  display: flex;
+  gap: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  align-items: center;
+}
+body header .guide a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+body header .guide a:hover {
+  text-decoration: underline;
+}
+body header .guide .CV a {
+  border: solid #64ffda;
+  display: block;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  border-radius: 1rem;
+  color: #64ffda;
+  margin-left: 2rem;
+}
+body header .guide .CV a:hover {
+  text-decoration: none;
+}
+body .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: flex-end;
+  justify-self: center;
+  margin-bottom: 3rem;
+}
+body .socials li::before {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  content: "";
+  display: block;
+}
+body .socials .linkedin::before {
+  background-image: url("/assets/img/linkedin.png");
+}
+body .socials .github::before {
+  background-image: url("/assets/img/github.png");
 }/*# sourceMappingURL=style.css.map */
