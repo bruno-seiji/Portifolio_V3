@@ -1,7 +1,11 @@
+:root{
+    --the-green: #64ffda;
+}
+
 body{
     background-color: #020c1b;
     display: grid;
-    grid-template-columns: 3rem auto;
+    grid-template-columns: 3rem auto 3rem;
     grid-template-rows: min-content auto;
     width: 100vw;
     height: 100vh;
@@ -13,13 +17,13 @@ body{
         width: 100vw;
         justify-content: space-between;
         padding: 1rem;
-        grid-column: 1 / span 2;
+        grid-column: 1 / span 3;
         align-items: center;
 
         .logo{
             
             img{
-                margin-top: 0.5rem;
+              margin-top: 0.5rem;
               width: 4rem;
               box-sizing: border-box;   
             }
@@ -43,11 +47,11 @@ body{
             }
 
             .CV a{
-                border: solid #64ffda ;
+                border: solid var(--the-green) ;
                 display: block;
                 padding: 0.7rem 2rem 0.7rem 2rem;
                 border-radius: 1rem;
-                color: #64ffda;
+                color: var(--the-green);
                 margin-left: 2rem;
             }
 
@@ -89,5 +93,22 @@ body{
             background-image: url("/assets/img/github.png");
        }
     }
+
+        #email{
+            text-decoration: none;
+            writing-mode: vertical-rl; /* ou vertical-lr */
+            text-orientation: upright;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: end;
+                      
+            p{
+            color: var(--the-green);
+            height: fit-content;
+            margin-bottom: 2rem;
+            }
+        }    
+
 }
 
