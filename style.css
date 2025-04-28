@@ -99,18 +99,25 @@ body #email p {
   margin-bottom: 2rem;
 }
 body #content {
-  width: 1270px;
+  width: 1000px;
   overflow-y: auto;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
+  margin: auto;
 }
 body #content .presentation {
+  justify-self: center;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 10rem;
-  margin-left: 5rem;
   padding-bottom: 100px;
+  margin-top: 15rem;
+  margin-left: 5rem;
+}
+body #content .presentation h1 {
+  width: 60%;
 }
 body #content .presentation p {
   font-weight: 400;
@@ -130,5 +137,80 @@ body #content .about {
   padding: 100px 0 100px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 2rem;
+}
+body #content .about h2 {
+  grid-column: 1/span 2;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  font-size: 2.5rem;
+}
+body #content .about p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+}
+body #content .about ul {
+  grid-column-start: 1;
+  display: grid;
+  grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
+  font-size: 1.2rem;
+  gap: 1rem;
+  letter-spacing: 0.2rem;
+}
+body #content .about ul li::before {
+  content: "* ";
+}
+body #content .about #perfil {
+  background-color: var(--the-green);
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  grid-column-start: 2;
+  grid-row: 1/span 4;
+  box-sizing: border-box;
+}
+body #content .about #perfil img {
+  width: 450px;
+}
+body #content .work {
+  padding: 100px 0 100px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: space-around;
+}
+body #content .work h2 {
+  font-size: 2rem;
+  grid-column: 1/span 2;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+body #content .work #places {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body #content .work #places li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body #content .work #content_work {
+  border: red solid;
+  grid-row: 1/span 2;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  width: 500px;
 }/*# sourceMappingURL=style.css.map */
