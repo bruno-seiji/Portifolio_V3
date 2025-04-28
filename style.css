@@ -3,6 +3,10 @@
   --font-p: "Cal Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #020c1b;
   width: 100vw;
@@ -27,6 +31,7 @@ body header .logo img {
   margin-top: 0.5rem;
   width: 4rem;
   box-sizing: border-box;
+  cursor: pointer;
 }
 body header .guide {
   display: flex;
@@ -117,7 +122,9 @@ body #content .presentation {
   margin-left: 5rem;
 }
 body #content .presentation h1 {
-  width: 60%;
+  width: 80%;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
 }
 body #content .presentation p {
   font-weight: 400;
@@ -128,10 +135,6 @@ body #content .presentation p:first-of-type {
   color: var(--the-green);
   font-weight: 700;
   font-size: 1rem;
-}
-body #content .presentation h1 {
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
 }
 body #content .about {
   padding: 100px 0 100px 0;
@@ -185,6 +188,7 @@ body #content .work {
   line-height: 2rem;
   letter-spacing: 0.2rem;
   justify-content: space-around;
+  gap: 2rem;
 }
 body #content .work h2 {
   font-size: 2rem;
@@ -206,7 +210,6 @@ body #content .work #places {
 }
 body #content .work #places li a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
   width: -moz-fit-content;
   width: fit-content;
   font-size: 1.2rem;
@@ -217,10 +220,10 @@ body #content .work #places li a:hover {
   color: var(--the-green);
 }
 body #content .work #content_work {
-  border: red solid;
   grid-column-start: 2;
   grid-row-start: 2;
   width: 500px;
+  height: 500px;
 }
 body #content .work #content_work div {
   display: flex;
@@ -239,4 +242,8 @@ body #content .work #content_work div ul li::before {
 
 .green {
   color: var(--the-green);
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

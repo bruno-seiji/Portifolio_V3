@@ -18,7 +18,7 @@
                 <img src="/assets/img/logo_nf.png" alt="">
             </div>
             <ul class="guide">
-                <li class="about"> <a href="">Sobre</a></li>
+                <li class="about"> <a href="#about">Sobre</a></li>
                 <li class="XP"> <a href="">Experiencias</a></li>
                 <li class="projects"> <a href="">Projetos</a></li>
                 <li class="CV"><a href="">CV</a></li>
@@ -41,7 +41,7 @@
                 <p>Criação de sites inclusivos e responsivos para uma melhor experiencia web</p>
             </div>
 
-            <div class="about">
+            <div id="about" class="about">
                 <h2>Sobre</h2>
                 <p>Sou Engenheiro Elétrico e graduando em Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento web. Atualmente, estou estudando Vue.js e React (em aprendizado), além de familiarizar com tecnologias como HTML, CSS, JavaScript, Tailwind CSS e SASS. Minha jornada na tecnologia é impulsionada pela busca por inovação e eficiência, criando interfaces modernas e responsivas.Busco oportunidades para atuar na área e continuar evoluindo como desenvolvedor.</p>
                 <p>Campo de conhecimento:</p>
@@ -62,11 +62,11 @@
                 <h2>Experiencias Profissinais</h2>
                 <ul id="places">
                     <li><a   class="lista_option" onclick="select_one()">CET (Companhia de Engenharia de Trafego)</a></li>
-                    <li><a   class="lista_option">H.L Comunicações (Assistencia Técnica Samsung)</a></li>
-                    <li><a   class="lista_option">Central Sam (Assistencia Técnica Samsung)</a></li>
+                    <li><a   class="lista_option" onclick="select_two()">H.L Comunicações (Assistencia Técnica Samsung)</a></li>
+                    <li><a   class="lista_option" onclick="select_three()">Central Sam (Assistencia Técnica Samsung)</a></li>
                 </ul>
                 <div id="content_work">
-                    <div class="cet">
+                    <div id="cet" class="lista_option_infs">
                         <p>Estagiario I - Infraestrutura</p>
                         <p>Outubro 2024  -  Atual</p>
                         <ul>
@@ -74,6 +74,26 @@
                             <li>Atendimento de tickets, conforme demanda para instalação e manutenção de herdware em geral</li>
                             <li>Instalção e configuração de Switchs em redes</li>
                         </ul>    
+                    </div>
+
+                    <div id="HL" class="lista_option_infs">
+                        <p>Técnico de Manutenção Mobile</p>
+                        <p>Março 2020  -  Outubro 2021</p>
+                        <ul>
+                            <li>Análise de defeitos, solicitação de peças</li>
+                            <li>Responsavel pelo reparo, troca de peças e manutenção geral dos aprelhos</li>
+                            <li>Realizava teste script para setor de QA</li>
+                        </ul>    
+                    </div>
+
+                    <div id="CSAM" class="lista_option_infs">
+                        <p>Técnico de Manutenção Mobile</p>
+                        <p>Abril 2018  -  Fevereiro 2020</p>
+                        <ul>
+                            <li>Análise de defeitos, solicitação de peças</li>
+                            <li>Responsavel pelo reparo, troca de peças e manutenção geral dos aprelhos</li>
+                            <li>Realizava teste script para setor de QA</li>
+                        </ul>  
                     </div>
                 </div>
             </div>
