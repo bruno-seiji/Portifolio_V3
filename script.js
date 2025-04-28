@@ -31,6 +31,12 @@ function select_three(){
 
 }
 
+function top0(){
+  window.scrollTo({
+    top: 0,
+  });
+}
+
 window.addEventListener('load', () => {
     select_one();
   });

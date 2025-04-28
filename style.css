@@ -242,8 +242,4 @@ body #content .work #content_work div ul li::before {
 
 .green {
   color: var(--the-green);
-}
-
-.hidden {
-  display: none;
 }/*# sourceMappingURL=style.css.map */
