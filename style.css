@@ -69,7 +69,7 @@ body .socials {
   left: 0;
   margin-left: 1rem;
 }
-body .socials li::before {
+body .socials a::before {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -77,6 +77,7 @@ body .socials li::before {
   height: 2rem;
   content: "";
   display: block;
+  cursor: pointer;
 }
 body .socials .linkedin::before {
   background-image: url("/assets/img/linkedin.png");
@@ -105,7 +106,6 @@ body #email p {
 }
 body #content {
   width: 1000px;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -239,7 +239,56 @@ body #content .work #content_work div ul {
 body #content .work #content_work div ul li::before {
   content: "> ";
 }
+body #content .projects {
+  padding: 100px 0 100px 0;
+  font-size: 1.5rem;
+}
+body #content .projects .proj_esq {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 2rem;
+  position: relative;
+}
+body #content .projects .proj_esq ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+body #content .projects .proj_esq li a::before {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  content: "";
+  display: block;
+  cursor: pointer;
+}
+body #content .projects .proj_esq .github::before {
+  background-image: url("/assets/img/github.png");
+}
+body #content .projects .proj_esq .acess::before {
+  background-image: url("/assets/img/acesso-direto.png");
+}
+body #content .projects .proj_esq img {
+  width: 500px;
+  height: 300px;
+  grid-row: 1/span 4;
+}
 
 .green {
   color: var(--the-green);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
