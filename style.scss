@@ -271,6 +271,10 @@ body{
                     width: 500px;
                     height: 500px;
 
+                    p span{
+                        display: none;
+                    }
+
 
                     div{
                         display: flex;
@@ -378,6 +382,96 @@ body{
 
 
 
-  
+  @media screen and (max-width: 430px) {
+   html{
+    overflow: hidden;
+   }
+   
+    body{ 
+
+         header{
+            .logo{
+                margin: auto;
+            }
+            .guide{
+                display: none;
+            }
+        }
+
+        .socials, #email{
+            display: none;
+        }
+
+        #content {
+        
+            .presentation {
+                margin-top: 10rem;
+                margin-left: 0;
+                width: 100vw;
+                padding: 50px 0 50px 0;
+
+                h1{
+                    font-size: 3rem;
+                }
+
+                p{
+                    width: 100vw;
+                }
+            }
+
+            .about{
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+               
+
+                p {
+                    width: 95vw;
+                    box-sizing: border-box;
+                    padding: 5px;
+                }
+
+                #perfil{
+                    display: none;
+                }
+            }
+
+            #work{
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                padding: 1rem;
+                box-sizing: border-box;
+                margin-top: 5rem;
+              
+                
+                p, li{
+                    width: 95vw;
+                }
+
+
+
+                #content_work{
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5rem;
+
+                    p span{
+                        display: block;
+                        color: #64ffda;
+                    }
+                }
+
+                #places {
+                    display: none;
+
+                }
+            }
+
+        }
+    }
+}
 
 

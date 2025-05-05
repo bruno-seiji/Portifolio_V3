@@ -38,6 +38,11 @@ function top0(){
 }
 
 window.addEventListener('load', () => {
-    select_one();
+    
+
+    if (window.matchMedia("(min-width: 1270px)").matches) {
+      select_one();
+    }
+
   });
 

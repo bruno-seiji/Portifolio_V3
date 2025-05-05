@@ -226,6 +226,9 @@ body #content .work #content_work {
   width: 500px;
   height: 500px;
 }
+body #content .work #content_work p span {
+  display: none;
+}
 body #content .work #content_work div {
   display: flex;
   flex-direction: column;
@@ -305,4 +308,69 @@ body #content .projects .proj a img {
 }
 .fade-in {
   animation: fadeIn 1s ease-in-out;
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    overflow: hidden;
+  }
+  body header .logo {
+    margin: auto;
+  }
+  body header .guide {
+    display: none;
+  }
+  body .socials, body #email {
+    display: none;
+  }
+  body #content .presentation {
+    margin-top: 10rem;
+    margin-left: 0;
+    width: 100vw;
+    padding: 50px 0 50px 0;
+  }
+  body #content .presentation h1 {
+    font-size: 3rem;
+  }
+  body #content .presentation p {
+    width: 100vw;
+  }
+  body #content .about {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  body #content .about p {
+    width: 95vw;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  body #content .about #perfil {
+    display: none;
+  }
+  body #content #work {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-top: 5rem;
+  }
+  body #content #work p, body #content #work li {
+    width: 95vw;
+  }
+  body #content #work #content_work {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  body #content #work #content_work p span {
+    display: block;
+    color: #64ffda;
+  }
+  body #content #work #places {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
