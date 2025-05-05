@@ -373,4 +373,14 @@ body #content .projects .proj a img {
   body #content #work #places {
     display: none;
   }
+  body #content .projects .proj {
+    width: 95vw;
+    display: block;
+  }
+  body #content .projects .proj ul:first-of-type {
+    display: none;
+  }
+  body #content .projects .proj ul {
+    justify-self: flex-start;
+  }
 }/*# sourceMappingURL=style.css.map */

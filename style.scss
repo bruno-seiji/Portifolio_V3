@@ -470,6 +470,23 @@ body{
                 }
             }
 
+            .projects{
+                .proj {
+                    width: 95vw;
+                    display: block;
+
+                    ul:first-of-type{
+                        display: none;
+                    } 
+
+                    ul{
+                        justify-self: flex-start;
+                    }
+
+
+                }
+            }
+
         }
     }
 }
