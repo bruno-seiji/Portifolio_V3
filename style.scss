@@ -26,6 +26,7 @@ body{
         align-items: center;
         position: fixed;
         background-color: #020c1b;
+        z-index: 10;
 
         .logo{
             
@@ -297,8 +298,11 @@ body{
             .projects{
                 padding: 100px 0 100px 0;
                 font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 5rem;
 
-                .proj_esq{
+                .proj{
                     display: grid;
                     grid-template-columns: auto auto;
                     grid-template-rows: auto auto auto auto;
@@ -333,11 +337,12 @@ body{
                     }
 
           
-                    img{ 
+                    a{ 
+                        img{
                         width: 500px ;
                         height: 300px;
+                        }
                         grid-row: 1 / span 4;
-
                     }
                 }
             }
@@ -348,6 +353,14 @@ body{
 
 .green {
     color: var(--the-green);
+}
+
+.proj_right{
+    grid-column-start:2 ;
+}
+
+.proj_left{
+    grid-column-start:1 ;
 }
 
 @keyframes fadeIn {

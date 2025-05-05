@@ -26,6 +26,7 @@ body header {
   align-items: center;
   position: fixed;
   background-color: #020c1b;
+  z-index: 10;
 }
 body header .logo img {
   margin-top: 0.5rem;
@@ -242,20 +243,23 @@ body #content .work #content_work div ul li::before {
 body #content .projects {
   padding: 100px 0 100px 0;
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
-body #content .projects .proj_esq {
+body #content .projects .proj {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   gap: 2rem;
   position: relative;
 }
-body #content .projects .proj_esq ul {
+body #content .projects .proj ul {
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
 }
-body #content .projects .proj_esq li a::before {
+body #content .projects .proj li a::before {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -265,20 +269,30 @@ body #content .projects .proj_esq li a::before {
   display: block;
   cursor: pointer;
 }
-body #content .projects .proj_esq .github::before {
+body #content .projects .proj .github::before {
   background-image: url("/assets/img/github.png");
 }
-body #content .projects .proj_esq .acess::before {
+body #content .projects .proj .acess::before {
   background-image: url("/assets/img/acesso-direto.png");
 }
-body #content .projects .proj_esq img {
+body #content .projects .proj a {
+  grid-row: 1/span 4;
+}
+body #content .projects .proj a img {
   width: 500px;
   height: 300px;
-  grid-row: 1/span 4;
 }
 
 .green {
   color: var(--the-green);
+}
+
+.proj_right {
+  grid-column-start: 2;
+}
+
+.proj_left {
+  grid-column-start: 1;
 }
 
 @keyframes fadeIn {
