@@ -150,9 +150,12 @@ body{
                 h1{
                     width: 80%;
                     font-size: 4rem;
+                    color: rgb(255, 255, 255,0.5);
+                }
+                
+                h1:first-of-type{
                     color: rgb(255, 255, 255,1);
-                 }
-
+                }
 
                 p{
                     font-weight: 400;
