@@ -135,7 +135,7 @@ body #content .presentation p {
 body #content .presentation p:first-of-type {
   color: var(--the-green);
   font-weight: 700;
-  font-size: 1rem;
+  letter-spacing: 0.2rem;
 }
 body #content .about {
   padding: 100px 0 100px 0;
