@@ -195,7 +195,7 @@ body #content .work {
   gap: 2rem;
 }
 body #content .work h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   grid-column: 1/span 2;
   grid-column-start: 1;
   grid-row-start: 1;
@@ -252,6 +252,11 @@ body #content .projects {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+}
+body #content .projects h1 {
+  width: 80%;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 body #content .projects .proj {
   display: grid;
@@ -330,7 +335,7 @@ body #content .projects .proj a img {
     margin-top: 10rem;
     margin-left: 0;
     width: 100vw;
-    padding: 50px 0 50px 0;
+    padding: 50px 1rem;
   }
   body #content .presentation h1 {
     font-size: 3rem;
@@ -377,13 +382,17 @@ body #content .projects .proj a img {
     display: none;
   }
   body #content .projects .proj {
-    width: 95vw;
+    width: 90vw;
     display: block;
+    padding: 1rem;
   }
   body #content .projects .proj ul:first-of-type {
     display: none;
   }
   body #content .projects .proj ul {
     justify-self: flex-start;
+  }
+  body #content .projects .proj a img {
+    width: 90vw;
   }
 }/*# sourceMappingURL=style.css.map */
