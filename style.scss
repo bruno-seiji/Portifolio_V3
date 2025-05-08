@@ -125,6 +125,7 @@ body{
             color: var(--the-green);
             height: fit-content;
             margin-bottom: 2rem;
+            font-size: 1rem;
             }
         }  
         
@@ -497,6 +498,10 @@ body{
                         width: 90vw;
                     }
 
+                    p{
+                        margin: 2rem 0;
+                    }
+
 
                 }
             }
@@ -504,5 +509,40 @@ body{
         }
     }
 }
+
+@media screen and (min-width: 431px) and (max-width: 1000px) {
+   body{
+    width: 100vw;
+    
+
+    header{
+        margin: auto;
+        top: 0;
+        position: fixed;
+    }
+
+    #content{
+        width: 100%;
+
+        .about,.work,.projects{
+            padding: 100px 1rem;
+            margin-left: 3rem;
+        }
+
+        .projects .proj a img {
+            width: 300px;
+            height: 200px;
+        }
+
+    }
+
+    #email{
+        display: none;
+    }
+   }
+}
+
+
+
 
 

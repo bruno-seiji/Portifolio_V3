@@ -104,6 +104,7 @@ body #email p {
   height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 2rem;
+  font-size: 1rem;
 }
 body #content {
   width: 1000px;
@@ -394,5 +395,32 @@ body #content .projects .proj a img {
   }
   body #content .projects .proj a img {
     width: 90vw;
+  }
+  body #content .projects .proj p {
+    margin: 2rem 0;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 1000px) {
+  body {
+    width: 100vw;
+  }
+  body header {
+    margin: auto;
+    top: 0;
+    position: fixed;
+  }
+  body #content {
+    width: 100%;
+  }
+  body #content .about, body #content .work, body #content .projects {
+    padding: 100px 1rem;
+    margin-left: 3rem;
+  }
+  body #content .projects .proj a img {
+    width: 300px;
+    height: 200px;
+  }
+  body #email {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

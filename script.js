@@ -40,7 +40,7 @@ function top0(){
 window.addEventListener('load', () => {
     
 
-    if (window.matchMedia("(min-width: 1270px)").matches) {
+    if (window.matchMedia("(min-width: 700px)").matches) {
       select_one();
     }
 
